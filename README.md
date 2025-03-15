@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CapLock - IoT and 3D Printing Solutions
 
-## Getting Started
+**CapLock** is an innovative platform that combines 3D printing technology, IoT solutions, and robotics to bring ideas to life. We specialize in custom-designed products, ranging from 3D printed items to smart home IoT kits, and strive to make technology accessible and affordable for all.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Contact Us](#contact-us)
+- [Get Started](#get-started)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Overview
 
-## Learn More
+CapLock provides cutting-edge solutions in **3D printing**, **IoT**, and **robotics**, offering products that enhance everyday life. Whether you are looking for custom 3D printed jewelry, home automation solutions, or advanced robotics kits, CapLock makes it easier for you to turn your creative ideas into reality.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Innovative Products**: Explore a wide variety of products ranging from 3D printed custom jewelry, LED Lithophanes, gesture-controlled robots, and smart home IoT kits.
+- **Fast & Secure Delivery**: CapLock ensures fast and safe delivery of all your products, keeping you updated along the way.
+- **Custom 3D Printing**: We offer custom 3D printing services for personalized items like earrings, phone stands, and vases.
+- **Smart Home Automation**: With our DIY Smart Home IoT Kit, automate your home appliances with ease.
+- **24/7 Customer Support**: Our dedicated team is always ready to assist you with any questions or issues.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **3D Printing**: We specialize in custom 3D printing solutions.
+- **IoT (Internet of Things)**: Our IoT kits help automate homes with smart devices.
+- **Robotics**: Gesture-controlled robots and other innovations in the field of robotics.
+- **MongoDB**: For managing product information and customer data.
+- **Next.js**: A React-based framework for building fast and optimized web applications.
+- **Vercel**: Hosting and deployment platform for our Next.js application.
+
+---
+
+## Contact Us
+
+Have a question or want to get in touch? We’d love to hear from you!
+
+- **Email**: contact@caplock.in
+---
+
+## Get Started
+
+To begin your journey with CapLock, explore our **[Products](https://caplock.in)** and start transforming your ideas into reality today.
+
+---
+
+© 2025 CapLock. All rights reserved.
