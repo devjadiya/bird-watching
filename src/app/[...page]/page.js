@@ -1,10 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import AboutPage from "@/components/AboutPage";
-import ContactPage from "@/components/ContactPage";
 import FaqPage from "@/components/FAQPage";
-import PolicyPage from "@/components/Policy";
 
 export default function Page() {
   const path = usePathname();
