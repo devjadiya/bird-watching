@@ -46,7 +46,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section className="bg-white text-black py-20">
+    <section className="bg-white text-black py-20" id="faq">
       <div className="container mx-auto px-6 lg:px-16">
         {/* Header */}
         <motion.div

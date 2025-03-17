@@ -60,7 +60,7 @@ const AboutSection = () => {
 
             {/* Learn More Button */}
             <div className="mt-8">
-              <Link href="/contact" passHref>
+              <Link href="/#booktrip" passHref>
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

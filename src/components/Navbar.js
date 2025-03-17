@@ -105,7 +105,7 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <Link href="/booktrip" passHref>
+              <Link href="/#booktrip" passHref>
                 <motion.div
                   whileHover={{ y: -2 }}
                   className={`font-medium relative ${
@@ -115,7 +115,7 @@ const Navbar = () => {
                   }`}
                 >
                   Book Trip
-                  {router.pathname === "/booktrip" && (
+                  {router.pathname === "/#booktrip" && (
                     <motion.div
                       layoutId="nav-underline"
                       className="absolute bottom-0 left-0 w-full h-0.5 bg-black mt-1"
@@ -160,36 +160,19 @@ const Navbar = () => {
                                 </AnimatePresence>
                             </div> */}
 
-              <Link href="/contact" passHref>
-                <motion.div
-                  whileHover={{ y: -2 }}
-                  className={`font-medium relative ${
-                    router.pathname === "/contact"
-                      ? "text-black"
-                      : "text-gray-600 hover:text-black"
-                  }`}
-                >
-                  Contact
-                  {router.pathname === "/contact" && (
-                    <motion.div
-                      layoutId="nav-underline"
-                      className="absolute bottom-0 left-0 w-full h-0.5 bg-black mt-1"
-                    />
-                  )}
-                </motion.div>
-              </Link>
+            
 
-              <Link href="/faq" passHref>
+              <Link href="/#faq" passHref>
                 <motion.div
                   whileHover={{ y: -2 }}
                   className={`font-medium relative ${
-                    router.pathname === "/faq"
+                    router.pathname === "/#faq"
                       ? "text-black"
                       : "text-gray-600 hover:text-black"
                   }`}
                 >
                   FAQ
-                  {router.pathname === "/faq" && (
+                  {router.pathname === "/#faq" && (
                     <motion.div
                       layoutId="nav-underline"
                       className="absolute bottom-0 left-0 w-full h-0.5 bg-black mt-1"
@@ -277,7 +260,7 @@ const Navbar = () => {
         <div className="py-4">
 
       
-          <Link href="/contact" passHref>
+          <Link href="/#booktrip" passHref>
             <div className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50">
               Contact
             </div>

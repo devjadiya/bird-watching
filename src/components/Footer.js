@@ -22,7 +22,7 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-300 text-sm">
             <li>
               <Link
-                href="/about"
+                href="/#booktrip"
                 className="hover:text-white transition duration-300"
               >
                 About Us
@@ -32,12 +32,7 @@ const Footer = () => {
              
             </li>
             <li>
-              <Link
-                href="/contact"
-                className="hover:text-white transition duration-300"
-              >
-                Contact Us
-              </Link>
+             
             </li>
           </ul>
         </div>
@@ -54,7 +49,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="mailTo:caplock.connect@gmail.com"
+                href="mailTo:info@pelagicbirdwatching.com"
                 className="hover:text-white transition duration-300"
               >
                 Mail Us
@@ -68,14 +63,14 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
           <div className="flex space-x-4">
             <Link
-              href="https://instagram.com/caplock.store"
+              href="https://instagram.com/"
               target="_blank"
               className="hover:text-gray-300 transition duration-300"
             >
               <FiInstagram className="text-xl" />
             </Link>
             <Link
-              href="https://x.com/CaplockConnect"
+              href="https://x.com/"
               target="_blank"
               className="hover:text-gray-300 transition duration-300"
             >

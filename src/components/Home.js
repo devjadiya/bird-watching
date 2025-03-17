@@ -26,7 +26,7 @@ const HeroSection = () => {
 
 
             <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
-              <Link href="/contact" passHref>
+              <Link href="/#booktrip" passHref>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -35,7 +35,7 @@ const HeroSection = () => {
                  Book Trip
                 </motion.div>
               </Link>
-              <Link href="/contact" passHref>
+              <Link href="/#booktrip" passHref>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

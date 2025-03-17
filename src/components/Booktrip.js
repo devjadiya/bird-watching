@@ -98,7 +98,7 @@ const InterestForm = () => {
   };
 
   return (
-    <section className="bg-black text-white p-10 rounded-xl shadow-lg">
+    <section className="bg-black text-white p-10 rounded-xl shadow-lg" id="booktrip">
       <h2 className="text-3xl font-bold mb-4 text-white">Express Your Interest</h2>
       <p className="mb-8 text-gray-300">
         Fill out the form below to show your interest in participating. Trips
