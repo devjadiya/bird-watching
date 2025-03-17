@@ -1,4 +1,4 @@
-# Pelagic Bird Watching - Official Website
+# Pelagic Bird Watching
 
 ## About the Project
 
