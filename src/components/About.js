@@ -17,12 +17,9 @@ const AboutSection = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h2 className="text-4xl md:text-6xl font-extrabold">About CapLock</h2>
+          <h2 className="text-4xl md:text-6xl font-extrabold">About Pelagic Bird Watching</h2>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
-            At CapLock, we merge art with cutting-edge technology to bring your
-            visions to life. Our expertise in 3D printing, IoT, and robotics
-            fuels innovation and precision.
-          </p>
+          Explore the open seas and uncover the beauty of pelagic birds. Join us in documenting and connecting with marine birdlife.          </p>
         </motion.div>
 
         {/* Split Layout: Image & Text */}
@@ -36,11 +33,10 @@ const AboutSection = () => {
             className="relative w-full md:w-1/2 h-[300px] md:h-[400px]"
           >
             <Image
-              src="https://formlabs-media.formlabs.com/filer_public_thumbnails/filer_public/f6/23/f623e6ff-7d8a-49e8-8f2b-4b40c938596c/image1.png__1184x0_subsampling-2.png"
+              src="https://www.notesfromtheroad.com/files/pelagic-birdwatching.jpg"
               alt="CapLock Innovation"
               layout="fill"
               objectFit="cover"
-              className="rounded-lg grayscale"
               priority
             />
           </motion.div>
@@ -53,21 +49,18 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="w-full md:w-1/2 md:pl-12"
           >
-            <p className="text-lg text-gray-300">
-              Our journey began with a simple idea—to revolutionize the way
-              technology interacts with creativity. Today, we are leaders in
-              digital manufacturing, constantly pushing boundaries and
-              delivering solutions that are both precise and innovative.
-            </p>
-            <p className="text-lg text-gray-300 mt-4">
-              With a passionate team and a commitment to excellence, CapLock
-              empowers creators and businesses to transform their ideas into
-              reality, all while maintaining a bold, minimalist style.
-            </p>
+<p className="text-lg text-gray-300">
+  Inspired by our love for the open seas and avian life, we created this platform to explore, document, and celebrate pelagic bird species. Our mission is to connect enthusiasts, researchers, and conservationists through seamless technology and collaboration.
+</p>
+<p className="text-lg text-gray-300 mt-4">
+  Committed to accuracy and accessibility, we offer tools and resources that empower bird watchers to contribute meaningful insights—deepening the understanding and appreciation of marine birdlife.
+</p>
+
+
 
             {/* Learn More Button */}
             <div className="mt-8">
-              <Link href="/about" passHref>
+              <Link href="/contact" passHref>
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

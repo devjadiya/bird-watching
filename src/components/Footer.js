@@ -10,11 +10,9 @@ const Footer = () => {
       <div className="container mx-auto px-6 lg:px-16 grid grid-cols-2 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div className=" col-span-2 md:col-span-1">
-          <h2 className="text-4xl font-bold mb-4">CapLock</h2>
+          <h2 className="text-4xl font-bold mb-4">Pelagic Birds</h2>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Your trusted partner for high-quality{" "}
-            <strong>3D Printing, IoT, and Prototyping</strong> solutions. We
-            innovate to bring your ideas to life.
+          For special requests, such as weekday trips for groups, please contact us at info@pelagicbirdwatching.com
           </p>
         </div>
 
@@ -31,12 +29,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link
-                href="/products"
-                className="hover:text-white transition duration-300"
-              >
-                Products
-              </Link>
+             
             </li>
             <li>
               <Link
@@ -54,20 +47,10 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Resources</h3>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li>
-              <Link
-                href="/faq"
-                className="hover:text-white transition duration-300"
-              >
-                FAQs
-              </Link>
+      
             </li>
             <li>
-              <Link
-                href="/policy"
-                className="hover:text-white transition duration-300"
-              >
-                Privacy Policy
-              </Link>
+              
             </li>
             <li>
               <Link
@@ -98,13 +81,7 @@ const Footer = () => {
             >
               <FiTwitter className="text-xl" />
             </Link>
-            <Link
-              href="https://www.linkedin.com/in/caplock-store-0928b6356/"
-              target="_blank"
-              className="hover:text-gray-300 transition duration-300"
-            >
-              <FiLinkedin className="text-xl" />
-            </Link>
+           
           </div>
           <p className="text-gray-400 text-sm mt-4">
             Stay connected for the latest updates and innovations.
@@ -114,13 +91,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="text-center text-gray-500 text-sm mt-8 border-t border-gray-700 pt-4">
-        &copy; {new Date().getFullYear()} CapLock. All rights reserved. |{" "}
-        <Link
-          href="/policy"
-          className="hover:text-gray-300 transition duration-300"
-        >
-          Privacy Policy
-        </Link>
+        &copy; {new Date().getFullYear()} Pelagic Bird Watching - Mangaluru | All Rights Reserved
       </div>
     </footer>
   );

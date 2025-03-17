@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { FiCheckCircle, FiXCircle, FiTruck } from "react-icons/fi";
-import { products } from "@/data";
 import toast from "react-hot-toast";
 import Link from "next/link";
 

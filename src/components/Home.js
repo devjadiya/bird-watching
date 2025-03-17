@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FiPrinter, FiCpu, FiSettings } from "react-icons/fi";
 const HeroSection = () => {
   return (
     <section className="relative w-full min-h-[80vh] bg-gray-50 overflow-hidden flex items-center">
@@ -17,22 +16,23 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
             className="w-full md:w-1/2 text-center md:text-left"
           >
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-              Transforming Ideas <br className="hidden md:block" /> into Reality
-              with <span className="text-gray-400">3D Printing</span>
-            </h1>
-            <p className="text-lg text-gray-700 mt-5 max-w-lg mx-auto md:mx-0">
-              Advanced 3D printing, IoT solutions, and robotics tailored to
-              bring your projects to life.
-            </p>
+         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+  Experience the Thrill of <span className="text-gray-400">Pelagic Bird Watching</span>
+</h1>
+<p className="text-lg text-gray-700 mt-5 max-w-lg mx-auto md:mx-0">
+  Set sail for an unforgettable birding adventure off the coast of Mangaluru, Karnataka, India 
+  <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India Flag" className="w-5 h-5 inline ml-1 mt-[-3px]" />
+</p>
+
+
             <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
-              <Link href="/products" passHref>
+              <Link href="/contact" passHref>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-8 py-3 bg-black text-white font-semibold rounded-lg shadow-md hover:bg-gray-900 transition-all"
                 >
-                  Explore Products
+                 Book Trip
                 </motion.div>
               </Link>
               <Link href="/contact" passHref>
@@ -56,7 +56,7 @@ const HeroSection = () => {
           >
             <div className="relative h-[350px] md:h-[450px] w-full">
               <Image
-                src="https://d4804za1f1gw.cloudfront.net/wp-content/uploads/sites/22/2024/07/3DPRINTER-BANNER.jpg"
+                src="https://assets.lummi.ai/assets/QmfJGNSfhs9XqJhQQXYiAy2wyUkJeVU2PKV9wTRt5fRJre?auto=format&w=1500"
                 alt="3D Printing Technology"
                 layout="fill"
                 objectFit="cover"

@@ -14,7 +14,6 @@ import {
   FiServer,
   FiCode,
 } from "react-icons/fi";
-import { products } from "@/data";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
@@ -25,10 +24,7 @@ const Navbar = () => {
 
   const [query, setQuery] = useState("");
 
-  // Filter products based on search query
-  const filteredProducts = products.filter((product) =>
-    product.title.toLowerCase().includes(query.toLowerCase())
-  );
+
 
   // Handle search input change
   const handleSearchChange = (e) => {
@@ -100,26 +96,26 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center cursor-pointer"
               >
-                <span className="text-3xl font-bold tracking-tighter">
-                  <span className="text-black">Cap</span>
-                  <span className="text-gray-600">Lock</span>
-                </span>
+ <span className="text-3xl font-bold tracking-tighter inline-flex items-center justify-center" style={{ height: '50px' }}>
+  <img src="Bird.svg" className="w-24 h-24" />
+</span>
+
               </motion.div>
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <Link href="/products" passHref>
+              <Link href="/booktrip" passHref>
                 <motion.div
                   whileHover={{ y: -2 }}
                   className={`font-medium relative ${
-                    router.pathname === "/products"
+                    router.pathname === "/booktrip"
                       ? "text-black"
                       : "text-gray-600 hover:text-black"
                   }`}
                 >
-                  Products
-                  {router.pathname === "/products" && (
+                  Book Trip
+                  {router.pathname === "/booktrip" && (
                     <motion.div
                       layoutId="nav-underline"
                       className="absolute bottom-0 left-0 w-full h-0.5 bg-black mt-1"
@@ -164,25 +160,6 @@ const Navbar = () => {
                                 </AnimatePresence>
                             </div> */}
 
-              <Link href="/about" passHref>
-                <motion.div
-                  whileHover={{ y: -2 }}
-                  className={`font-medium relative ${
-                    router.pathname === "/about"
-                      ? "text-black"
-                      : "text-gray-600 hover:text-black"
-                  }`}
-                >
-                  About
-                  {router.pathname === "/about" && (
-                    <motion.div
-                      layoutId="nav-underline"
-                      className="absolute bottom-0 left-0 w-full h-0.5 bg-black mt-1"
-                    />
-                  )}
-                </motion.div>
-              </Link>
-
               <Link href="/contact" passHref>
                 <motion.div
                   whileHover={{ y: -2 }}
@@ -225,15 +202,7 @@ const Navbar = () => {
             {/* Right Navigation Icons */}
             <div className="flex items-center space-x-2 sm:space-x-4">
               {/* Search Button */}
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => setSearchOpen(!searchOpen)}
-                className="p-2 text-gray-700 hover:text-black hover:bg-gray-100 rounded-full"
-              >
-                <FiSearch className="w-5 h-5" />
-              </motion.button>
-
+            
               {/* Cart Button */}
               {/* <motion.button
                                 whileHover={{ scale: 1.1 }}
@@ -267,61 +236,7 @@ const Navbar = () => {
         </div>
 
         {/* Search Overlay */}
-        <AnimatePresence>
-          {searchOpen && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="relative overflow-hidden border-t border-gray-200 bg-white"
-            >
-              <div className="container mx-auto px-4 py-4">
-                <div className="flex items-center bg-gray-100 rounded-lg overflow-hidden">
-                  <FiSearch className="ml-4 text-gray-400" />
-                  <input
-                    type="text"
-                    placeholder="Search products..."
-                    className="w-full p-3 bg-transparent focus:outline-none"
-                    autoFocus
-                    value={query}
-                    onChange={handleSearchChange}
-                  />
-                  <button
-                    onClick={() => setSearchOpen(false)}
-                    className="p-3 text-gray-400 hover:text-gray-600"
-                  >
-                    <FiX />
-                  </button>
-                </div>
-
-                {/* Search Results Dropdown */}
-                {query && (
-                  <div className="bg-white shadow-md rounded-lg mt-2 max-h-60 overflow-auto">
-                    {filteredProducts.length > 0 ? (
-                      filteredProducts.map((product) => (
-                        <div
-                          key={product.product_id}
-                          onClick={() => handleProductClick(product.product_id)}
-                          className="p-3 border-b border-gray-200 hover:bg-gray-100 cursor-pointer flex items-center gap-3"
-                        >
-                          <img
-                            src={product.images[0]}
-                            alt={product.title}
-                            className="w-10 h-10 rounded-md object-cover"
-                          />
-                          <p className="text-gray-800">{product.title}</p>
-                        </div>
-                      ))
-                    ) : (
-                      <p className="p-3 text-gray-500">No products found</p>
-                    )}
-                  </div>
-                )}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+       
       </header>
 
       {/* Mobile Menu */}
@@ -360,29 +275,15 @@ const Navbar = () => {
         </div>
 
         <div className="py-4">
-          <Link href="/products" passHref>
-            <div className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50">
-              Products
-            </div>
-          </Link>
 
-          <Link href="/about" passHref>
-            <div className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50">
-              About
-            </div>
-          </Link>
-
+      
           <Link href="/contact" passHref>
             <div className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50">
               Contact
             </div>
           </Link>
 
-          <Link href="/faq" passHref>
-            <div className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50">
-              FAQ
-            </div>
-          </Link>
+         
 
           <Link href="/policy" passHref>
             <div className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50">

@@ -6,30 +6,36 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 
 const faqs = [
   {
-    question: "What is your shipping policy?",
+    question: "What is included in the bird-watching trip?",
     answer:
-      "We offer fast and secure shipping worldwide. Delivery times vary based on location.",
+      "Each trip includes expert guidance, boat transport, safety gear, and refreshments. Binoculars and bird guides are recommended but not provided.",
   },
   {
-    question: "Do you accept returns?",
+    question: "How do I book a trip?",
     answer:
-      "Yes, we offer hassle-free returns within 7 days of delivery. Contact our support team for assistance.",
+      "Simply fill out the interest form on our website. Trips require a minimum of 12 participants to be confirmed.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "What should I bring for the trip?",
     answer:
-      "We accept all major credit/debit cards, PayPal, and digital wallets for secure transactions.",
+      "We recommend carrying binoculars, a camera, sunscreen, a hat, comfortable clothing, and motion sickness medication if needed.",
   },
   {
-    question: "Do you offer custom 3D printing services?",
+    question: "Do you offer private or weekday trips?",
     answer:
-      "Yes! We provide fully customized 3D printing services based on your design and requirements.",
+      "Yes, we offer customized weekday trips for groups upon request. Contact us for availability and pricing.",
   },
   {
-    question: "How can I track my order?",
+    question: "Is prior bird-watching experience required?",
     answer:
-      "Once your order is shipped, you will receive a tracking number via email to monitor the delivery progress.",
+      "Not at all! Our trips are designed for both beginners and seasoned birders, with expert guidance provided throughout.",
   },
+  {
+    question: "What happens in case of bad weather?",
+    answer:
+      "Safety is our priority. If weather conditions are unfavorable, we will reschedule or provide a full refund.",
+  },
+  
 ];
 
 const FaqSection = () => {
