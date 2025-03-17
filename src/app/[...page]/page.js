@@ -24,10 +24,7 @@ export default function Page() {
 
   return (
     <div>
-      {page === "about" && <AboutPage />}
-      {page === "contact" && <ContactPage />}
-      {page === "faq" && <FaqPage />}
-      {page === "policy" && <PolicyPage />}
+   
     </div>
   );
 }
