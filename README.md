@@ -14,10 +14,5 @@ This is the official website for Pelagic Bird Watching, designed to provide info
 ## Tech Stack
 
 - **Frontend**: Next.js, React, Tailwind CSS
-- **Deployment**: Firebase Hosting
+- **Deployment**: Vercel
 
-## Contact
-
-For special trip requests or inquiries, email us at [info@pelagicbirdwatching.com](mailto:info@pelagicbirdwatching.com).
-
-© 2025 Pelagic Bird Watching - Mangaluru | All Rights Reserved
