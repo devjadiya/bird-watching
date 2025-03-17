@@ -42,7 +42,8 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon.ico" />
         {/* Standard Meta Tags */}
         <>
-  <meta name="title" content="Pelagic Birds - Bird Watching & Conservation" />
+  {/* Basic Meta Tags */}
+  <title>Pelagic Birds - Explore the World of Seabirds</title>
   <meta
     name="description"
     content="Explore the fascinating world of pelagic birds. Discover species, habitats, migration patterns, and conservation efforts for seabirds."
@@ -53,56 +54,26 @@ export default function RootLayout({ children }) {
   />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://pelagic-birds.vercel.app/" />
+
   {/* Open Graph (Facebook, LinkedIn) */}
-  <meta
-    property="og:title"
-    content="Pelagic Birds - Explore the World of Seabirds"
-  />
+  <meta property="og:url" content="https://pelagic-birds.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pelagic Birds - Explore the World of Seabirds" />
   <meta
     property="og:description"
     content="Learn about pelagic bird species, their unique adaptations, and conservation efforts to protect oceanic birdlife."
   />
-  <meta property="og:url" content="https://pelagic-birds.vercel.app/" />
-  <meta property="og:type" content="website" />
-</>
 
-        {/* Schema.org Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "CapLock",
-              url: "https://caplock.in",
-              logo: "https://caplock.in/favicon.ico",
-              description:
-                "Discover premium 3D printing, IoT, and prototyping solutions at CapLock.",
-              sameAs: [
-                "https://instagram.com/caplock.store",
-                "https://x.com/CaplockConnect",
-                "https://www.linkedin.com/in/caplock-store-0928b6356/",
-              ],
-            }),
-          }}
-        />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ID}`}
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ID}',{
-            page_path: window.location.pathname,});
-            `,
-          }}
-        />
+  {/* Twitter Meta Tags */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="pelagic-birds.vercel.app" />
+  <meta property="twitter:url" content="https://pelagic-birds.vercel.app/" />
+  <meta name="twitter:title" content="Pelagic Birds - Explore the World of Seabirds" />
+  <meta
+    name="twitter:description"
+    content="Learn about pelagic bird species, their unique adaptations, and conservation efforts to protect oceanic birdlife."
+  />
+</>    
       </head>
 
       <body>
