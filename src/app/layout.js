@@ -15,20 +15,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "CapLock - 3D Printing & IoT Solutions",
+  title: "Pelagic Birds - Bird Watching & Conservation",
   description:
-    "Discover premium 3D printing, IoT, and prototyping solutions at CapLock. Get custom designs, smart automation, and advanced robotics.",
+    "Explore the fascinating world of pelagic birds. Discover species, habitats, migration patterns, and conservation efforts for seabirds.",
   keywords:
-    "CapLock, Caplock SATI, Caplock Variablex, Caplock 3d, Caplock IOT, SATI Vidisha, 3D printing, IoT solutions, prototyping, robotics, custom design, smart automation",
-  authors: [{ name: "CapLock Team", url: "https://caplock.in" }],
+    "pelagic birds, bird watching, seabird conservation, ocean birds, migratory birds, bird species, ornithology, wildlife photography, bird habitats",
+  authors: [{ name: "Pelagic Birds Team", url: "https://pelagic-birds.vercel.app/" }],
   openGraph: {
-    title: "CapLock - Innovate with 3D Printing & IoT",
+    title: "Pelagic Birds - Explore the World of Seabirds",
     description:
-      "Premium 3D printing, IoT, and automation solutions tailored for creators and businesses.",
-    url: "https://caplock.in",
+      "Learn about pelagic bird species, their unique adaptations, and conservation efforts to protect oceanic birdlife.",
+    url: "https://pelagic-birds.vercel.app/",
     type: "website",
   },
 };
+
 
 export default function RootLayout({ children }) {
   return (
@@ -40,51 +41,31 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
         {/* Standard Meta Tags */}
-        <meta name="title" content="CapLock - 3D Printing & IoT Solutions" />
-        <meta
-          name="description"
-          content="Discover premium 3D printing, IoT, and prototyping solutions at CapLock."
-        />
-        <meta
-          name="keywords"
-          content="3D printing, IoT solutions, prototyping, robotics, custom design, smart automation"
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://caplock.in" />
-        {/* Open Graph (Facebook, LinkedIn) */}
-        <meta
-          property="og:title"
-          content="CapLock - Innovate with 3D Printing & IoT"
-        />
-        <meta
-          property="og:description"
-          content="Premium 3D printing, IoT, and automation solutions tailored for creators and businesses."
-        />
-        <meta property="og:url" content="https://caplock.in" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://caplock.in/favicon.ico" />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="CapLock - 3D Printing & IoT Solutions"
-        />
-        <meta
-          name="twitter:description"
-          content="Discover premium 3D printing, IoT, and prototyping solutions."
-        />
-        <meta name="twitter:site" content="@CaplockConnect" />
-        <meta name="twitter:creator" content="@CaplockConnect" />
-        <meta name="twitter:image" content="https://caplock.in/favicon.ico" />
-        {/* Social Media Links */}
-        <link rel="me" href="https://instagram.com/caplock.store" />
-        <link rel="me" href="https://x.com/CaplockConnect" />
-        <link
-          rel="me"
-          href="https://www.linkedin.com/in/caplock-store-0928b6356/"
-        />
+        <>
+  <meta name="title" content="Pelagic Birds - Bird Watching & Conservation" />
+  <meta
+    name="description"
+    content="Explore the fascinating world of pelagic birds. Discover species, habitats, migration patterns, and conservation efforts for seabirds."
+  />
+  <meta
+    name="keywords"
+    content="pelagic birds, bird watching, seabird conservation, ocean birds, migratory birds, bird species, ornithology, wildlife photography, bird habitats"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://pelagic-birds.vercel.app/" />
+  {/* Open Graph (Facebook, LinkedIn) */}
+  <meta
+    property="og:title"
+    content="Pelagic Birds - Explore the World of Seabirds"
+  />
+  <meta
+    property="og:description"
+    content="Learn about pelagic bird species, their unique adaptations, and conservation efforts to protect oceanic birdlife."
+  />
+  <meta property="og:url" content="https://pelagic-birds.vercel.app/" />
+  <meta property="og:type" content="website" />
+</>
+
         {/* Schema.org Structured Data */}
         <script
           type="application/ld+json"
