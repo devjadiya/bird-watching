@@ -24,8 +24,6 @@ const Navbar = () => {
 
   const [query, setQuery] = useState("");
 
-
-
   // Handle search input change
   const handleSearchChange = (e) => {
     setQuery(e.target.value);
@@ -96,10 +94,12 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center cursor-pointer"
               >
- <span className="text-3xl font-bold tracking-tighter inline-flex items-center justify-center" style={{ height: '50px' }}>
-  <img src="Bird.svg" className="w-24 h-24" />
-</span>
-
+                <span
+                  className="text-3xl font-bold tracking-tighter inline-flex items-center justify-center"
+                  style={{ height: "50px" }}
+                >
+                  <img src="Bird.svg" className="w-24 h-24" />
+                </span>
               </motion.div>
             </Link>
 
@@ -123,45 +123,6 @@ const Navbar = () => {
                   )}
                 </motion.div>
               </Link>
-
-              {/* Services Dropdown */}
-              {/* <div className="relative">
-                                <motion.button
-                                    whileHover={{ y: -2 }}
-                                    className={`flex items-center font-medium ${dropdownOpen === "services" ? "text-black" : "text-gray-600 hover:text-black"}`}
-                                    onClick={() => toggleDropdown("services")}
-                                >
-                                    Services
-                                    <FiChevronDown className={`ml-1 transform transition-transform ${dropdownOpen === "services" ? "rotate-180" : ""}`} />
-                                </motion.button>
-
-                                <AnimatePresence>
-                                    {dropdownOpen === "services" && (
-                                        <motion.div
-                                            initial={{ opacity: 0, y: 10 }}
-                                            animate={{ opacity: 1, y: 0 }}
-                                            exit={{ opacity: 0, y: 10 }}
-                                            transition={{ duration: 0.2 }}
-                                            className="absolute top-full left-0 mt-2 w-60 bg-white rounded-md shadow-lg py-2 z-20"
-                                        >
-                                            {serviceItems.map((item) => (
-                                                <Link key={item.name} href={item.href} passHref>
-                                                    <motion.div
-                                                        whileHover={{ x: 5 }}
-                                                        className="flex items-center px-4 py-3 text-gray-700 hover:text-black"
-                                                    >
-                                                        {item.icon}
-                                                        {item.name}
-                                                    </motion.div>
-                                                </Link>
-                                            ))}
-                                        </motion.div>
-                                    )}
-                                </AnimatePresence>
-                            </div> */}
-
-            
-
               <Link href="/#faq" passHref>
                 <motion.div
                   whileHover={{ y: -2 }}
@@ -185,7 +146,7 @@ const Navbar = () => {
             {/* Right Navigation Icons */}
             <div className="flex items-center space-x-2 sm:space-x-4">
               {/* Search Button */}
-            
+
               {/* Cart Button */}
               {/* <motion.button
                                 whileHover={{ scale: 1.1 }}
@@ -219,7 +180,6 @@ const Navbar = () => {
         </div>
 
         {/* Search Overlay */}
-       
       </header>
 
       {/* Mobile Menu */}
@@ -258,21 +218,23 @@ const Navbar = () => {
         </div>
 
         <div className="py-4">
+        <Link href="/#booktrip" passHref>
+  <div
+    onClick={() => setIsOpen(false)}
+    className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50"
+  >
+    Contact
+  </div>
+</Link>
 
-      
-          <Link href="/#booktrip" passHref>
-            <div className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50">
-              Contact
-            </div>
-          </Link>
-
-         
-
-          <Link href="/policy" passHref>
-            <div className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50">
-              Privacy Policy
-            </div>
-          </Link>
+<Link href="/#faq" passHref>
+  <div
+    onClick={() => setIsOpen(false)}
+    className="block px-5 py-3 text-lg font-medium text-gray-700 hover:text-black hover:bg-gray-50"
+  >
+    Common Questions
+  </div>
+</Link>
         </div>
       </motion.nav>
 
