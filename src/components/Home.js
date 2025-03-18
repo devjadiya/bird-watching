@@ -56,7 +56,7 @@ const HeroSection = () => {
           >
             <div className="relative h-[350px] md:h-[450px] w-full">
               <Image
-                src="https://assets.lummi.ai/assets/QmfJGNSfhs9XqJhQQXYiAy2wyUkJeVU2PKV9wTRt5fRJre?auto=format&w=1500"
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Brown_Skua_from_India.jpg"
                 alt="3D Printing Technology"
                 layout="fill"
                 objectFit="cover"
