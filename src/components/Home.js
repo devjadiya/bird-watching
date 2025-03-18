@@ -57,7 +57,7 @@ const HeroSection = () => {
             <div className="relative h-[350px] md:h-[450px] w-full">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Brown_Skua_from_India.jpg"
-                alt="3D Printing Technology"
+                alt="Brown Skua from India"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-xl shadow-lg"
