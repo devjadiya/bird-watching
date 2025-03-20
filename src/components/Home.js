@@ -57,7 +57,7 @@ const HeroSection = () => {
             <div className="relative h-[350px] md:h-[450px] w-full">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Brown_Skua_from_India.jpg"
-                alt="Brown Skua from India"
+                alt="Brown Skua from Mangaluru off coast"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-xl shadow-lg"
